@@ -1,0 +1,16 @@
+{
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false,
+    "tagPrefix": "v",
+    "sortCommits": "relevance",
+    "replaceText": {
+      "(#\\d+)": "[`$1`](https://github.com/your-username/your-repo/issues/$1)"
+    },
+
+    "issuePattern": "#(\\d+)",
+    "breakingPattern": "BREAKING CHANGE:"
+  }
+}

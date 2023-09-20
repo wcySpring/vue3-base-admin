@@ -1,6 +1,6 @@
 {
   "name": "vue3-base-admin",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -13,12 +13,12 @@
     "format": "prettier --write src/",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "commit": "czg"
+    "commit": "czg",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue}": "eslint --fix",
     "*.{scss,less,styl,html}": [
-      "stylelint --fix",
       "prettier --write"
     ],
     "{!(package)*.json,*.code-snippets,.!(browserslist)*rc}": "prettier --write --parser json",
@@ -43,6 +43,7 @@
     "@vue/eslint-config-typescript": "^12.0.0",
     "@vue/test-utils": "^2.4.1",
     "@vue/tsconfig": "^0.4.0",
+    "auto-changelog": "^2.4.0",
     "czg": "^1.7.1",
     "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
