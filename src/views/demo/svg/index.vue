@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <p>unplugin-icons 使用可以自定文件目录中svg 也可以 搭配当前比较受欢迎的 iconify 进行使用</p>
     <p>具体配置可以参考当前vite 配置 svgIconsPlugin.ts 文件</p>
@@ -9,7 +9,7 @@
       <i-home:setting style="color: red" />
     </div>
   </div>
-  <hr />
+
   <div>
     <p>
       vite-plugin-svg-icons ,使用本地导入的svg 图片并且可以做到 svg 雪碧图的优化效果需要
@@ -23,7 +23,6 @@
       <svg-icon icon-class="setting" />
     </div>
   </div>
-  <hr />
 
   <div>
     <p>使用图标集 iconify 上的图标 推荐和 unplugin-icons 配合</p>
@@ -33,7 +32,6 @@
       <i-ic:baseline-5g />
     </div>
   </div>
-  <hr />
 
   <div>
     <p>使用图标集 iconify 上的图标 直接使用 @iconify/vue vue组件</p>
@@ -44,16 +42,16 @@
     </div>
     <div>
       本地使用需要导入 @iconify-icons/ic
-      <Icon :icon="baseline5g1" />
-      <Icon :icon="baseline5g1" color="#f00" />
+      <Icon :icon="baseline5g" />
     </div>
   </div>
+
+  <Icon icon="mdi-light:home" />
+
+  <Icon icon="ic:baseline-5g" />
 </template>
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-// import baseline5g from '@iconify-icons/ic/baseline-5g'
-
-const baseline5g1 = ref(baseline5g)
-console.log(baseline5g)
-</script>
+import baseline5g from '@iconify-icons/ic/baseline-5g'
+</script> -->
